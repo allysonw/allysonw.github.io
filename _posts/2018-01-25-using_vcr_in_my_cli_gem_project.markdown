@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Using VCR in My CLI Gem Project"
-date:       2018-01-26 02:00:11 +0000
+date:       2018-01-25 21:00:12 -0500
 permalink:  using_vcr_in_my_cli_gem_project
 ---
 

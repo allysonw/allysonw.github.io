@@ -31,7 +31,7 @@ gem 'webmock'
 Then you have to update a few files to make VCR work with your program.
 
 
-**gemspec file **
+**gemspec file**
 
 Add a development dependency for Webmock.
 ```

@@ -1,12 +1,13 @@
 ---
 layout: post
 title:      "Nested Layouts in Sinatra with ERB"
-date:       2018-03-14 21:47:59 +0000
+date:       2018-03-14 17:48:00 -0400
 permalink:  nested_layouts_in_sinatra_with_erb
 ---
 
-
+<div style="text-align:center">
 <img src="https://s7d1.scene7.com/is/image/BedBathandBeyond/10356416309656p?$478$" alt="Nested bowls" style="width: 200px;"/>
+</div>
 
 When working on my Sinatra Porfotilio project [Snippet Manager](http://https://github.com/allysonw/snippet-manager), I found myself repeating the same chunk of code across several of my views. My application manages code snippets, and one of the features is the ability to add a label to each code snippet. When displaying all of their snippets, the user sees a label navigation pane on the left of the page that lets them filter their snippets by label. When I went to update the styling for the label navigation pane, I realized I'd need to update the same code in 3 places. I realized the whole setup violated DRY, and that there had to be a better way.
 

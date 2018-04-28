@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "ActiveRecord Associations and dependent: :destroy"
-date:       2018-04-28 01:28:17 +0000
+date:       2018-04-27 21:28:17 -0400
 permalink:  activerecord_associations_and_dependent_destroy
 ---
 
@@ -41,6 +41,8 @@ class Appointment < ActiveRecord::Base
   belongs_to :patient
 end
 ```
+
+Now, whenever a Patient or a User model is destroyed, all associated Appointment records are too.
 
 Interestingly, I declared `dependent: :destroy` on the `has_many` statement indicating that appointments was my join table. Using `dependent: destroy` on the `has_many :appointments` statement did not achieve the desired behavior. I'm not quite sure why...
 

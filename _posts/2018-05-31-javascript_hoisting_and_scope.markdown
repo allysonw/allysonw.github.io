@@ -182,6 +182,8 @@ hoisting();
 - Assignment took place after `console.log`
 - Error at the `console.log` line because we can't reference a variable declared with `let` before it's defined
 
+
+
 #### Changing name to be a function
 
 ```

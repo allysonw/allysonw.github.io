@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "JavaScript Hoisting and Scope"
-date:       2018-05-31 20:36:30 +0000
+date:       2018-05-31 16:36:31 -0400
 permalink:  javascript_hoisting_and_scope
 ---
 
@@ -78,6 +78,8 @@ function printHello() {
 ```
 The function declaration is set up during the compilation phase, so when `printHello()` is actually executed in the execution phase, the reference to the code contained in the function is already defined, and everything works.
 
+
+### Hoisting with variables
 It is important to remember that hoisting only applies to variable _declarations_, not variable _assignments_. That is, the following won't work so nicely:
 ```
 function printHello() {
@@ -107,7 +109,42 @@ printHello();
 //=> ERROR:Uncaught ReferenceError: newVariable is not defined
 ```
 
-In general, to avoid issues with hosting that can crop up with `var`, make sure to declare functions and variables at the top of their scope. Basically, if you declare your functions and variables above where you are going to use them, and make sure to always use `let` and `const` rather than `var`, you shouldn't run into any hoisting issues.
+In general, to avoid issues with hosting that can crop up with `var`, make sure to declare variables at the top of their scope. Basically, if you declare your variables above where you are going to use them, and make sure to always use `let` and `const` rather than `var`, you shouldn't run into any variable hoisting issues.
+
+
+### Hoisting with Functions
+
+Just like with variables, function _declarations_ are hoisted. With functions, though, we need to distinguish between **function declarations** and **function expressions**.  Specifically, _function declarations are hoisted, but function expressions are not._
+
+**Function declaration**:
+- Is hoisted
+- Can therefore be invoked "before" it is declared
+
+```
+printHello();
+
+function printHello() {
+  console.log('hello')
+}
+
+//=> 'hello'
+```
+
+**Function expression**:
+- Is NOT hoisted
+- **Cannot** be invoked before it is declared
+
+```
+hi();
+
+var hi = function printHello() {
+  console.log('hello')
+}
+
+//=> TypeError: hi is not a function
+```
+
+If you think of the function expression as a type of assignment to a variable, it makes sense that the declaration of a function would be hosted but the "assignment" (i.e. function expression) would not. In general, follow the same rules as with variables to avoid hoisting issues. Declare functions at the top of their scope, before you try to invoke them.
 
 ### Some Examples
  I found the below examples illustrative when thinking about hoisting.

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Getting Started on a React App with a Rails API"
-date:       2018-06-20 18:15:12 +0000
+date:       2018-06-20 14:15:13 -0400
 permalink:  getting_started_on_a_react_app_with_a_rails_api
 ---
 
@@ -97,7 +97,7 @@ This will tell Foreman to run our React app on port 3000, and since our `Procfil
 As [this guide](https://www.fullstackreact.com/articles/how-to-get-create-react-app-to-work-with-your-rails-api/) specifies, you can even create a handy rake task to make starting your servers easy.
 
 ```
-# Rakefile
+# lib/tasks/start.rake
 task :start do
   exec 'foreman start -p 3000'
 end

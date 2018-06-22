@@ -4,7 +4,7 @@ header-img: img/home-bg.png
 email: allysonwesman@gmail.com
 copyright_name: Allyson Wesman
 description: > # this means to ignore newlines until "baseurl:"
-  Full stack web developer with a passion for continued learning.
+  I'm full stack web developer with a passion for continued learning.
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username:
 github_username:  allysonw

@@ -2,11 +2,11 @@
 title: Allyson Wesman's Blog
 header-img: img/home-bg.png
 email: allysonwesman@gmail.com
-copyright_name: allysonw
+copyright_name: Allyson Wesman
 description: > # this means to ignore newlines until "baseurl:"
   Full stack web developer with a passion for continued learning.
 baseurl: "" # the subpath of your site, e.g. /blog
-twitter_username: 
+twitter_username:
 github_username:  allysonw
 learn_profile: allysonw
 email_username: allysonwesman@gmail.com

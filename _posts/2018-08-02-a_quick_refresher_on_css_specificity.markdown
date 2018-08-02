@@ -70,6 +70,6 @@ For this reason, using `!important` in your styles is best avoided as it can mak
 ### Summing Up
 This article covered the basics of CSS specificity. There are some additional wrinkles and exceptions that come up that I haven't covered here, but this should get you through most interview questions. See the references below to learn more.
 
-##### References:
-- https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity
-- https://css-tricks.com/precedence-css-order-css-matters/
+#### References:
+- [MDN on CSS Specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity)
+- [CSS Precedence](https://css-tricks.com/precedence-css-order-css-matters/)
